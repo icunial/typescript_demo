@@ -94,3 +94,17 @@ type Point = number | string
 const p1:Point = 2
 
 // user1.id = 5
+
+// Interfaces Functions
+
+interface MathFunc{
+   (x: number, y: number):number 
+}
+
+const add:MathFunc = (x: number, y:number):number => {
+    return x + y
+}
+
+const sub:MathFunc = (x: number, y:number):number => {
+    return x - y
+}

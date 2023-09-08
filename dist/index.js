@@ -64,4 +64,9 @@ const user1 = {
     name: "Name 1"
 };
 const p1 = 2;
-// user1.id = 5
+const add = (x, y) => {
+    return x + y;
+};
+const sub = (x, y) => {
+    return x - y;
+};
