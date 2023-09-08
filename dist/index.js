@@ -70,3 +70,12 @@ const add = (x, y) => {
 const sub = (x, y) => {
     return x - y;
 };
+// Classes -> Es6
+class Person {
+    constructor(id, name) {
+        this.id = id,
+            this.name = name;
+    }
+}
+const person1 = new Person(1, "Name");
+console.log(person1);

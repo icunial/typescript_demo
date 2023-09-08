@@ -108,3 +108,18 @@ const add:MathFunc = (x: number, y:number):number => {
 const sub:MathFunc = (x: number, y:number):number => {
     return x - y
 }
+
+// Classes -> Es6
+class Person{
+    id: number
+    name: string
+
+    constructor(id: number, name: string){
+        this.id = id,
+        this.name = name
+    }
+}
+
+const person1 = new Person(1, "Name")
+
+console.log(person1)
