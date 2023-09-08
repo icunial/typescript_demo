@@ -111,15 +111,20 @@ const sub:MathFunc = (x: number, y:number):number => {
 
 // Classes -> Es6
 class Person{
-    id: number
-    name: string
+    private id: number
+    private name: string
 
     constructor(id: number, name: string){
         this.id = id,
         this.name = name
     }
+
+    register(){
+        return `${this.name} is now registered!`
+    }
 }
 
-const person1 = new Person(1, "Name")
+const person1 = new Person(1, "Name 1")
 
 console.log(person1)
+console.log(person1.register())
