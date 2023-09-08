@@ -59,3 +59,9 @@ const log2 = (message) => {
     console.log(message);
 };
 log2("New Message");
+const user1 = {
+    id: 1,
+    name: "Name 1"
+};
+const p1 = 2;
+// user1.id = 5

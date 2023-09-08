@@ -76,3 +76,21 @@ const log2 = (message: string):void =>{
 }
 
 log2("New Message")
+
+// Interfaces
+
+interface UserInterface{
+    readonly id:number,
+    name: string
+    age?: number
+}
+
+const user1: UserInterface = {
+    id: 1,
+    name: "Name 1"
+}
+
+type Point = number | string
+const p1:Point = 2
+
+// user1.id = 5
