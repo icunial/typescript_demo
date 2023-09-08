@@ -148,3 +148,16 @@ class Employee extends Person{
 
 const e1 = new Employee(2, "Employee 1", "Chief")
 console.log(e1)
+
+// Generics
+
+function getArray<T>(items: T[]):T[] {
+    return new Array().concat(items);
+}
+
+let numArray = getArray<number>([1,2,3,4])
+let stringArray = getArray<string>(["1", "2", "3", "4"])
+
+// numArray.push("Hello")
+numArray.push(5)
+console.log(numArray)

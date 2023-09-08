@@ -92,3 +92,12 @@ class Employee extends Person {
 }
 const e1 = new Employee(2, "Employee 1", "Chief");
 console.log(e1);
+// Generics
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3, 4]);
+let stringArray = getArray(["1", "2", "3", "4"]);
+// numArray.push("Hello")
+numArray.push(5);
+console.log(numArray);
