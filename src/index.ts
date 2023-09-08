@@ -134,3 +134,17 @@ const person1 = new Person(1, "Name 1")
 
 console.log(person1)
 console.log(person1.register())
+
+// Extending Classes -> subclasses
+class Employee extends Person{
+    position: string
+
+    constructor(id:number, name: string, position:string){
+        super(id, name)
+        this.position = position
+    }
+
+}
+
+const e1 = new Employee(2, "Employee 1", "Chief")
+console.log(e1)
