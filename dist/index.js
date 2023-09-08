@@ -55,3 +55,7 @@ function log(message) {
 }
 log("Message");
 log(1);
+const log2 = (message) => {
+    console.log(message);
+};
+log2("New Message");

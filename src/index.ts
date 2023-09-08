@@ -70,3 +70,9 @@ function log(message: string | number): void{
 
 log("Message")
 log(1)
+
+const log2 = (message: string):void =>{
+    console.log(message)
+}
+
+log2("New Message")
