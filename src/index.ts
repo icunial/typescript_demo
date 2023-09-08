@@ -1,5 +1,5 @@
 // Basic Types
-let id:number = 5
+// let id:number = 5
 let company:string = "Traversy Media"
 let isPublished: boolean = true
 let x: any = "Hello"
@@ -20,3 +20,22 @@ employee = [
     [1, "Name 1"],
     [2, "Name 2"]
 ]
+
+// Union
+let id: string | number
+
+id = 22
+id = "Hello"
+
+// Enum
+enum Direction1 {
+    Up = 1, Down, Left, Right
+}
+
+console.log(Direction1.Up)
+
+enum Direction2 {
+    Up = "Up", Down = "Down", Left = "Left", Right = "Right"
+}
+
+console.log(Direction2.Left)
