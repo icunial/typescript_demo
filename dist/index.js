@@ -37,3 +37,7 @@ var Direction2;
     Direction2["Right"] = "Right";
 })(Direction2 || (Direction2 = {}));
 console.log(Direction2.Left);
+const user = {
+    id: 1,
+    name: "Name 1"
+};
