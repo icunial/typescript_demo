@@ -51,3 +51,8 @@ const user: User = {
     id: 1,
     name: "Name 1"
 }
+
+// Type Assertion
+let cid: any = 1
+//let customerId = <number>cid
+let customerId = cid as number
