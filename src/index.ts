@@ -109,10 +109,16 @@ const sub:MathFunc = (x: number, y:number):number => {
     return x - y
 }
 
+interface PersonInterface {
+    id: number,
+    name: string,
+    register(): string
+} 
+
 // Classes -> Es6
-class Person{
-    private id: number
-    private name: string
+class Person implements PersonInterface{
+     id: number
+     name: string
 
     constructor(id: number, name: string){
         this.id = id,
